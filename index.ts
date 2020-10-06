@@ -1,1 +1,1 @@
-commands.raw('pong', (message) => message.reply('pong!'));
+await message.reply('hi');
