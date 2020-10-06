@@ -1,1 +1,1 @@
-await message.reply('hi');
+message.reply('hi');
