@@ -1,5 +1,2 @@
-discord.registerEventHandler("MESSAGE_CREATE", async (msg) => {
-  if (msg.content === "!pong") {
-    await msg.reply("Pong!");
-  }
-})
+const a = await discord.getGuildTextChannel('500818380979437579');
+await a.sendMessage('hi');
