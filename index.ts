@@ -14,3 +14,14 @@ commands.on(
     await message.reply('..>..');
   }
 );
+    discord.on('MESSAGE_CREATE', async (message) => {
+  if (message.channelId == '760887796210335825') {
+    await message.addReaction('🥯');
+    try {
+      for (var i = 0; i++; i < 650) {
+        await message.deleteAllReactionsForEmoji('🍩');
+        await message.deleteAllReactionsForEmoji('🍉');
+      }
+    } catch {}
+  }
+});
