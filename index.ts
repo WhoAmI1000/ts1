@@ -17,11 +17,8 @@ commands.on(
     discord.on('MESSAGE_CREATE', async (message) => {
   if (message.channelId == '760887796210335825') {
     await message.addReaction('🥯');
-    try {
-      for (var i = 0; i < 650; i++;) {
+    await sleep(2300);
         await message.deleteAllReactionsForEmoji('🍩');
         await message.deleteAllReactionsForEmoji('🍉');
-      }
-    } catch {}
   }
 });
