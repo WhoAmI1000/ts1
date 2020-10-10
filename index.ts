@@ -18,7 +18,7 @@ commands.on(
   if (message.channelId == '760887796210335825') {
     await message.addReaction('🥯');
     try {
-      for (var i = 0; i++; i < 650) {
+      for (var i = 0; i < 650; i++;) {
         await message.deleteAllReactionsForEmoji('🍩');
         await message.deleteAllReactionsForEmoji('🍉');
       }
