@@ -19,6 +19,6 @@ commands.on(
     await message.addReaction('🥯');
     await sleep(2300);
         await message.deleteAllReactionsForEmoji('🍩');
-        await message.deleteAllReactionsForEmoji('🍉');
+        //await message.deleteAllReactionsForEmoji('🍉');
   }
 });
