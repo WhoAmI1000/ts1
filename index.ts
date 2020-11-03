@@ -27,3 +27,11 @@ commands.on(
         //await message.deleteAllReactionsForEmoji('🍉');
   }
 });
+        discord.on('MESSAGE_CREATE', async (message) => {
+  if (message.channelId == '773064015504605194') {
+    await message.addReaction('🍕');
+    await sleep(2300);
+        await message.deleteAllReactionsForEmoji('🍩');
+        //await message.deleteAllReactionsForEmoji('🍉');
+  }
+});
