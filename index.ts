@@ -24,7 +24,7 @@ commands.on(
     await message.addReaction('🥯');
     await sleep(2300);
         await message.deleteAllReactionsForEmoji('🍩');
-        await message.deleteAllReactionsForEmoji('bigbrain:773228620537790494');
+        await message.deleteAllReactionsForEmoji('<:bigbrian:773956254363811861>');
   }
 });
         discord.on('MESSAGE_CREATE', async (message) => {
