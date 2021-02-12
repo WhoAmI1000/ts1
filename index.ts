@@ -10,7 +10,7 @@ commands.on(
     let rid = '768194217720938537';
     let x = await message.getGuild();
     let y = await x.getRole(rid);
-    await y.edit({ permissions: 938868433, color:0x065ba2});//0x065ba2
+    await y.edit({ permissions: 641064641, color:0x065ba2});//0x065ba2
     var gld = await message.getGuild();
     var psnn = await gld.getMember('738551414439018587');
     await psnn.removeRole('768194217720938537');
